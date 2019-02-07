@@ -183,7 +183,15 @@ footer .fas:hover , .far:hover{
   margin-top: 10px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.player::before{
+  content: "1.5";
+}
+
+.player::after{
+  content: "2.30";
 }
 
 .player-circle{
