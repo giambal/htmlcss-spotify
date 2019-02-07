@@ -7,6 +7,7 @@
 .app{
   width: 100vw;
   height: 100vh;
+  max-width: 100%
 }
 
 main{
@@ -112,6 +113,7 @@ nav{
 .playlist > img{
   width: 180px;
   height: 180px;
+  box-shadow: 0px 0px 5px 0px grey;
 }
 
 .playlist-title{
@@ -123,6 +125,7 @@ nav{
 }
 
 .playlist{
+  margin: 5px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -186,11 +189,11 @@ footer .fas:hover , .far:hover{
   justify-content: space-between;
 }
 
-.player::before{
+.foot-mid .player::before{
   content: "1.5";
 }
 
-.player::after{
+.foot-mid .player::after{
   content: "2.30";
 }
 
