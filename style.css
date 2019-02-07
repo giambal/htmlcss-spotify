@@ -54,6 +54,7 @@ nav{
   border-left: 1.5px solid green;
   color: white;
   padding-left: 13.5px;
+  cursor: pointer;
 }
 
 .recently{
@@ -72,17 +73,60 @@ nav{
 
   /* CORPO */
 
-.corpo{
-   background-image: linear-gradient(160deg, yellow , black );
+.main-part{
+   background-image: linear-gradient(160deg, darkgoldenrod , black );
   width: 85%;
+  color: rgb(200 , 200 , 200);
 }
 
 .container{
-  width: 80%;
+  width: 90%;
   margin: auto;
+  margin-top: 20px;
+  padding: 0px;
 }
 
+.main-part-menu{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
 
+.main-part-menu > .menu-item{
+  border: none;
+  padding: 5px 20px;
+}
+
+.main-part-menu > .menu-item:hover{
+  border-bottom: 1.5px solid green;
+  color: white;
+  cursor: pointer;
+  padding: 3.5px 20px;
+}
+
+.container h1{
+  color : white;
+  padding: 0px;
+}
+
+.playlist > img{
+  width: 180px;
+  height: 180px;
+}
+
+.playlist-title{
+  color: white;
+}
+
+.playlist > p{
+  margin-bottom: 0px;
+}
+
+.playlist{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
   /* footer */
 
@@ -121,9 +165,14 @@ nav{
   align-items: center;
 }
 
-footer .fas{
+footer .fas , .far{
   padding: 10px;
   color: #cecece;
+}
+
+footer .fas:hover , .far:hover{
+  cursor: pointer;
+  color: green;
 }
 
 .player{
@@ -137,7 +186,7 @@ footer .fas{
   justify-content: center;
 }
 
-.cerchietto{
+.player-circle{
   width: 10px;
   height: 10px;
   border-radius: 50%;
